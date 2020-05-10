@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio| Quartos Airbnb</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
+            <img src="https://logodownload.org/wp-content/uploads/2016/10/Airbnb-Logo-9.png" alt="Logomarca" width="3%"> 
+            <strong>Airbnb By Eden Konde</strong>
+        </nav>
+    </header>
+    <section class="m-4">
+        <div class="expansive">
+          <div class="row">
+            <div class="col-lg-12">
+              <form action="/" method="post" id="form-search">
+                <div class="form-group">
+                  <div class="row shadows">
+                    <div class="col-lg-4 p-0">
+                      <div class="content box-search">
+                        <label for="location" class="label-config border-right-label w-100">
+                          <div class="mr-3">
+                            <small id="locationText" class="form-text"><strong>LOCALIZAÇÃO</strong></small>
+                            <select class="form-control" name="location" id="location">
+                              <option value="" disabled selected >Para onde você vai?</option>
+                              <option value="" >Acre (AC)</option>
+                              <option value="" >Alagoas (AL)</option>
+                              <option value="" >Amapá (AP)</option>
+                              <option value="" >Amazonas (AM)</option>
+                              <option value="" >Bahia (BA)</option>
+                              <option value="" >Ceará (CE)</option>
+                              <option value="" >Distrito Federal (DF)</option>
+                              <option value="" >Espírito Santo (ES)</option>
+                              <option value="" >Goiás (GO)</option>
+                              <option value="" >Maranhão (MA)</option>
+                              <option value="" >Mato Grosso (MT)</option>
+                              <option value="" >Mato Grosso do Sul (MS)</option>
+                              <option value="" >Minas Gerais (MG)</option>
+                              <option value="" >Pará (PA)</option>
+                              <option value="" > Paraíba (PB)</option>
+                              <option value="" >Paraná (PR)</option>
+                              <option value="" >Pernambuco (PE)</option>
+                              <option value="" >Piauí (PI)</option>
+                              <option value="" >Rio de Janeiro (RJ)</option>
+                              <option value="" >Rio Grande do Norte (RN)</option>
+                              <option value="" >Rio Grande do Sul (RS)</option>
+                              <option value="" > Rondônia (RO)</option>
+                              <option value="" >Roraima (RR)</option>
+                              <option value="" >Santa Catarina (SC)</option>
+                              <option value="" >São Paulo (SP)</option>
+                              <option value="" >Sergipe (SE)</option>
+                              <option value="" >Tocantins (TO)</option>
+
+                            </select>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 p-0">
+                      <div class="content box-search">
+                        <label for="dates" class="label-config border-right-label w-100">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div>
+                                <small id="datesText" class="form-text"><strong>CHECKIN</strong></small>
+                                <input type="date" class="form-control" name="checkin" id="checkin" placeholder="Insira as datas">
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div>
+                                <small id="datesText" class="form-text"><strong>CHECKOUT</strong></small>
+                                <input type="date" class="form-control" name="checkout" id="checkout" placeholder="Insira as datas">
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 p-0">
+                      <div class="content box-search">
+                        <label for="guests" class="label-config w-100">
+                          <div>
+                            <small id="guestsText" class="form-text"><strong>HÓSPEDES</strong></small>
+                            <input type="number" class="form-control" name="guests" id="guests" placeholder=" Quantidade de hospedes">
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-1 p-0">
+                      <div class="content box-search">
+                        <button class="btn btn-search" type="submit">
+                          <i class="fa fa-search"></i>
+                          <span class="pl-1">Buscar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>      
+    <div class="flex-container">
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/e6c4b347-49c7-4840-8c00-df36a2a273da.jpg?aki_policy=x_large" alt="">
+            <dl>
+                <dt>
+                    Apartamento
+                </dt>
+                <dd>
+                    Apartamento em Son Parc, vistas maravilhosas
+                </dd>
+                <dd class="preco">
+                    R$ 433
+                </dd>
+            </dl>   
+       </div>
+        <div class="item">
+           <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/4a5326cb-95e4-4220-a4d8-c91f50cf784c.jpg?aki_policy=xx_large" alt="">
+           <dl>
+                <dt>
+                    Apartamento
+                </dt>
+                <dd>
+                    APARTAMENTO IDEAL PAREJAS EN SON PARC
+                </dd>
+                <dd class="preco">
+                    R$ 368
+                </dd>
+            </dl> 
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/77a102a4-cf65-475e-be60-4d592307ab4a.jpg?aki_policy=xx_large" alt="">
+            <dl>
+                <dt>
+                    Casa
+                </dt>
+                <dd>
+                    Casa Charmosa Bem Localizada
+                </dd>
+                <dd class="preco">
+                    R$ 70
+                </dd>
+            </dl>        
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/83de85c5-ce24-4cc4-ae85-dfb2300b4a06.jpg?aki_policy=xx_large" alt="">
+            <dl>
+                <dt>
+                    Casa
+                </dt>
+                <dd>
+                    Quartos pertinho do Anhembi!
+                </dd>
+                <dd class="preco">
+                    R$ 189
+                </dd>
+            </dl>               
+        </div>
+        <div class="item">
+             <img  onmouseover="bigImg(this)" onmouseout="normalImg(this)"class="imagem" src="https://a0.muscache.com/im/pictures/d5dbb5b2-12a3-4de5-87d0-5a66841eb731.jpg?aki_policy=xx_large" alt="">
+             <dl>
+                <dt>
+                    Chácara
+                </dt>
+                <dd>
+                    Chalé de Encanto, piscina privativa, AC grátis e Wi-Fi
+                </dd>
+                <dd class="preco">
+                    R$ 737
+                </dd>
+            </dl>
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/ce7dd48a-8125-4cea-a1b7-27ce0068d5d8.jpg?aki_policy=x_large" alt="">
+                <dl>
+                    <dt>
+                        Chácara
+                    </dt>
+                    <dd>
+                        Menorca Green Park C7
+                    </dd>
+                    <dd class="preco">
+                        R$ 520
+                    </dd>
+                </dl>
+        </div>   
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/bea86611-2f82-487a-a62e-17ab268515de.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Chácara
+                    </dt>
+                    <dd>
+                        Villa Monty
+                    </dd>
+                    <dd class="preco">
+                        R$ 1291
+                    </dd>
+                </dl>       
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/4cfeba0b-a0c3-4ae4-87c9-5e9349608814.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Estúdio
+                    </dt>
+                    <dd>
+                        Bonito penthouse cerca del aeropuerto CDMX
+                    </dd>
+                    <dd class="preco">
+                        R$ 73
+                    </dd>
+                </dl>     
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/ac081c48-0161-4cde-a0e6-77b3bd933f94.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Estúdio
+                    </dt>
+                    <dd>
+                        The Backpacker's Retreat - Balcony
+                    </dd>
+                    <dd class="preco">
+                        R$ 51
+                    </dd>
+                </dl>
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/dc72255f-7965-4964-b89e-7bfb9f4aa939.jpg?aki_policy=x_large" alt="">
+                <dl>
+                    <dt>
+                        Estúdio
+                    </dt>
+                    <dd>
+                        10min airport, Foro Sol, Palacio de los Deportes
+                    </dd>
+                    <dd class="preco">
+                        R$ 81
+                    </dd>
+                </dl>
+        </div>    
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/60f11b07-3aa2-4e03-ac03-6a0c12fbc35b.jpg?aki_policy=x_large" alt="">
+                <dl>
+                    <dt>
+                        Estúdio
+                    </dt>
+                    <dd>
+                        Acogedor depto cerca aeropuerto, foro Sol, Centro
+                    </dd>
+                    <dd class="preco">
+                        R$ 77
+                    </dd>
+                </dl>
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/f2379eb0-d77e-4a99-9df5-f16032693f0d.jpg?aki_policy=xx_large" alt="">
+                 <dl>
+                    <dt>
+                        Loft
+                    </dt>
+                    <dd>
+                        Sol Nascente da Prainha
+                    </dd>
+                    <dd class="preco">
+                        R$ 200
+                    </dd>
+                </dl>
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/5ed611f3-fb3f-489e-b1cb-d5f26ea80c4c.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Loft
+                    </dt>
+                    <dd>
+                        Ap novo com wi-fi na Prainha - Arraial do Cabo
+                    </dd>
+                    <dd class="preco">
+                        R$ 145
+                    </dd>
+                </dl> 
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/207ef44d-fbe6-4fcd-9824-91b65de4b3cb.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Quarto
+                    </dt>
+                    <dd>
+                        Suite @ Subway Trianon Masp
+                    </dd>
+                    <dd class="preco">
+                        R$ 69
+                    </dd>
+                </dl> 
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/f94985db-d4db-4c10-8b9b-82342746601d.jpg?aki_policy=x_large" alt="">
+               <dl>
+                    <dt>
+                        Quarto
+                    </dt>
+                    <dd>
+                        Quarto Arouche Centro SP Ótima Localização
+                    </dd>
+                    <dd class="preco">
+                        R$ 45
+                    </dd>
+                </dl>  
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/8b397c47-01af-4476-9fb8-784ab4df2c91.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Quarto
+                    </dt>
+                    <dd>
+                        Quarto 1 - Parque da Aclimacão
+                    </dd>
+                    <dd class="preco">
+                        R$ 55
+                    </dd>
+                </dl>  
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/c3c6432f-b140-4768-8d61-c160e639b7a8.jpg?aki_policy=x_large" alt="">
+               <dl>
+                    <dt>
+                        Quarto
+                    </dt>
+                    <dd>
+                        Existe amor em SP
+                    </dd>
+                    <dd class="preco">
+                        R$ 55
+                    </dd>
+                </dl>    
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/306e0369-ab79-40be-bdb7-c87340dcdbc1.jpg?aki_policy=xx_large" alt="">
+            <dl>
+                <dt>
+                    Quarto
+                </dt>
+                <dd>
+                    Confortável quarto de casal px. à Av. Paulista
+                </dd>
+                <dd class="preco">
+                    R$ 80
+                </dd>
+            </dl>    
+
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/f5abd356-8a66-495b-b00b-877e7eae0323.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Quarto
+                    </dt>
+                    <dd>
+                        Room Higienopolis São Paulo
+                    </dd>
+                    <dd class="preco">
+                        R$ 80
+                    </dd>
+                </dl>      
+        </div>
+        <div class="tem">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/f1899868-21d0-44c2-b253-8b927821e178.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Quarto
+                    </dt>
+                    <dd>
+                        Confortável quarto solteiro px. à Av. Paulista
+                    </dd>
+                    <dd class="preco">
+                        R$ 80
+                    </dd>
+                </dl>
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/6b46fa03-8ef3-4370-8158-390935279dcf.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Quarto
+                    </dt>
+                    <dd>
+                        Modern, Cozy + all you need! Muito aconchegante!!
+                    </dd>
+                    <dd class="preco">
+                        R$ 66
+                    </dd>
+                </dl> 
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/f074bead-ee2d-4c91-a958-2a0360e1ad7c.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Sítio
+                    </dt>
+                    <dd>
+                        Recanto Rosana - Quartos e estrutura completa
+                    </dd>
+                    <dd class="preco">
+                        R$ 39
+                    </dd>
+                </dl> 
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/de890df5-1279-481f-989c-97847f8482cd.jpg?aki_policy=xx_large" alt="">
+                <dl>
+                    <dt>
+                        Sítio
+                    </dt>
+                    <dd>
+                        Suite na Montanha - Refúgio do Artista
+                    </dd>
+                    <dd class="preco">
+                        R$ 77
+                    </dd>
+                </dl> 
+        </div>
+        <div class="item">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="imagem" src="https://a0.muscache.com/im/pictures/17b61b71-3b06-4cec-bf8f-f32daea24f39.jpg?aki_policy=xx_large" alt="">
+               <dl>
+                    <dt>
+                        Sítio
+                    </dt>
+                    <dd>
+                        Sítio Costa do Sol
+                    </dd>
+                    <dd class="preco">
+                        R$ 100
+                    </dd>
+                </dl> 
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        function bigImg(x) {
+          x.style.height = "350px";
+          x.style.width = "350px";
+        }
+        
+        function normalImg(x) {
+          x.style.height = "300px";
+          x.style.width = "300px";
+        }
+    </script> 
+    
+    <footer id="footer" class="footer container-fluid py-5 bg-black-alt c-white">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 pr-4 footer-info">
+            <div class="row text-right">
+              <div class="col-12 mb-3">
+                <small class="">Developed by:</small> <span>Eden Konde</span>
+              </div>
+              <div class="col-12">
+                <p>2020 © Projeto acadêmico - Gama Academy.</p>
+              </div>
+              <div class="col-12 f24px">
+                <a class="" href="www.linkedin.com/in/eden-konde" target="_blank">
+                  <i class="fa fa-linkedin pl-3"></i>
+                </a>
+                <a class="" href="https://github.com/EdenKonde/" target="_blank">
+                  <i class="fa fa-github pl-3"></i>
+                </a>
+                <a class="" href="https://instagram.com/edenkonde/" target="_blank">
+                  <i class="fa fa-instagram pl-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+</body>
+</html>
